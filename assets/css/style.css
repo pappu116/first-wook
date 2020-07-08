@@ -1,0 +1,144 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 ,h2, h3, h4, h5, h6{
+    color: #333,
+}
+.header-bg {
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	background-color: #cd2027;
+	margin-top: -100px;
+}
+.hero-text {
+	margin-top: 20%;
+	margin-left: 5%;
+}
+  .hero-text h1 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: .9;
+  }
+  .navbar.navbar-expand-lg.navbar-light {
+	position: relative;
+	z-index: 1;
+	content: "";
+	width: 100%;
+	height: 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: red;
+	box-shadow: 0 0 10px lightcyan;
+	border-radius: 5px;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 700;
+}
+.navbar-light .navbar-brand:hover{
+    color: #fff;
+}
+
+.card-header {
+	border-bottom: none;
+}
+.btn {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: .25rem;
+	background-image: linear-gradient(160deg,yellow,red);
+	text-decoration: none;
+	box-shadow: none;
+}
+
+.cta-area {
+	margin: 50px;
+	height: 100%;
+	text-align: center;
+  }
+  .cta-area h1 {
+	font-size: 46px;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+  .container.cta-area h1 span {
+	color: #CD2027;
+  }
+ 
+.btn:hover {
+	box-shadow: none;
+	color: #fff;
+	text-decoration: none;
+	background-image: linear-gradient(160deg,yellow,green);
+}
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: none;
+}
+.styled-faq .card-header button {
+	display:inline-block;
+	padding: 15px;
+	position: relative;
+	text-decoration: none;
+}
+.styled-faq .card-header .mb-0 button i.fa {
+  float: right;
+  font-size: 150%;
+  line-height: 25px;
+  margin-left: 5px;
+  display: none;
+}
+.styled-faq .card-header .mb-0 button[aria-expanded="true"] i.fa.fa-angle-down {
+	display: block;
+}
+
+.styled-faq .card-header .mb-0 button[aria-expanded="false"] i.fa.fa-angle-up {
+	display: block;
+}
+.card-body{
+	padding: 10px 50px;
+}
+.applay-btn {
+	padding: 10px 20px;
+	border: none;
+	background-image: linear-gradient(160deg,yellow,red);
+	margin: 20px 0;
+	border-radius: 5px;
+}
+.applay-btn a {
+	text-decoration: none;
+	color: #fff;
+}
+.applay-btn:hover {
+	box-shadow: 0px 0px 40px lightgreen;
+	background-image: linear-gradient(160deg,yellow,green);
+}
+.card-body h2{
+	text-transform: uppercase;
+	font-weight: 700;
+}
