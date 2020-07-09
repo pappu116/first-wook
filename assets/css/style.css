@@ -88,6 +88,7 @@ h1 ,h2, h3, h4, h5, h6{
   }
   .container.cta-area h1 span {
 	color: #CD2027;
+	text-transform:none;
   }
  
 .btn:hover {
@@ -389,29 +390,88 @@ h1 ,h2, h3, h4, h5, h6{
 	color: #fff;
 	font-size: 35px;
 }
-@media only screen and (max-width: 991px){
+
+@media only screen and (max-width:900px){
+	
 	.hero-text {
-		margin-top: 60%;
+		margin-top: 70%;
 		margin-left: 5%;
+		margin-bottom: 50px;
+	}
+	.hero-text h1{
+		font-size: 70px;
+	}
+	#about {
+		margin-left: 20%;
 	}
 	.header-bg {
-		height: 900px;
+		height: 100%;
 		margin-top: -400px;
 	}
 		.navbar-light .navbar-toggler-icon {
 			background-color: #888;
 			border-radius: 5px;
 		}
-}
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 801px){
 	.hero-text {
-		margin-top: 100%;
+		margin-top: 70%;
 		margin-left: 10%;
-		font-size: 30px;
 	}
 	.hero-text h1 {
 		color: #fff;
 		font-size: 60px;
 		line-height: 1.2;
+	}
+	.btn-primary {
+		left: 45%;
+	}
+	.footer-bg .contact-btn {
+		padding: 10px 20px;
+		font-size: 35px;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width:550px){
+	.hero-text h1 {
+		font-size: 50px;
+	}
+.hero-text {
+	margin-top: 100%;
+	font-size: 30px;
+}
+	.btn-primary {
+		left: 4%;
+	}
+
+	.footer-bg .contact-btn {
+		font-size: 20px;
+		text-decoration: none;
+		padding: 10px 20px;
+	}
+	#about {
+		margin-left: -50px;
+	}
+}
+@media only screen and (max-width: 520px){
+	.btn-primary {
+		left: 10%;
+	}
+	.footer-bg .contact-btn {
+		font-size: 20px;
+	}
+	
+	.advertiser-bg h1 {
+		font-size: 30px;
+	}
+	.cta-area h1 {
+		font-size: 26px;
+	}
+	.hero-text {
+		margin-top: 100%;
+		font-size: 30px;
+	}
+	.hero-text h1{
+		font-size: 40px;
 	}
 }
