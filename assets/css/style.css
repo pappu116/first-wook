@@ -14,6 +14,8 @@ h1 ,h2, h3, h4, h5, h6{
 	height: 700px;
 	background-color: #cd2027;
 	margin-top: -100px;
+	position: relative;
+	z-index: -1;
 }
 .hero-text {
 	margin-top: 20%;
@@ -47,6 +49,10 @@ h1 ,h2, h3, h4, h5, h6{
 	color: #fff;
 	font-size: 50px;
 	font-weight: 700;
+	border-radius: 5px;
+	text-shadow: 0 0 5px lawngreen;
+	box-shadow: 0 0 10px steelblue;
+	padding: 0;
 }
 .navbar-light .navbar-brand:hover{
     color: #fff;
@@ -141,4 +147,271 @@ h1 ,h2, h3, h4, h5, h6{
 .card-body h2{
 	text-transform: uppercase;
 	font-weight: 700;
+}
+.cta-title{
+	text-align: left;
+}
+.cta-bg {
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+}
+.header-bg::after {
+	position: absolute;
+	background: #000;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: .65;
+}
+
+
+.cta-title h1 {
+	text-transform: uppercase;
+	font-size: 46px;
+	margin: 20px 0;
+	font-weight: 700;
+	line-height: 2.7;
+  }
+  .cta-title h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 2.7;
+  }
+  .cta-bg::after {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	content: "";
+	background-color: #000;
+	z-index: -1;
+	opacity: 0.85;
+}
+.btn-primary {
+	position: relative;
+	top: 0;
+	left: 70%;
+}
+.right {
+	margin-top: 45px;
+}
+.card-body {
+	padding: 0;
+}
+.btn-link.focus, .btn-link:focus {
+	text-decoration: none;
+	box-shadow: none;
+}
+.red {
+	color: red;
+	line-height: 2.5;
+}
+.advertiser-bg {
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-color: #ddd;
+	color: #333;
+	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.advertiser-bg h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 1.7;
+  }
+  .advertiser-bg:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	content: "";
+	z-index: -1;
+	opacity: 0.65;
+  }
+  .advertiser-bg .btn {
+	padding: 10px 20px;
+	background: red;
+  }
+  .advertiser-bg .btn:hover {
+	background: black;
+	box-shadow: 0 0 10px lawngreen;
+	color: red;
+  }
+  .tearms-bg h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
+.tearms-bg {
+	background: #CD2027;
+	padding: 20px;
+}
+.team1{
+	background-image: url(../images/img-bg1.jpg);
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+
+.team2{
+	background-image: url(../images/img-bg2.jpg);
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+
+.team3{
+	background-image: url(../images/img-bg3.jpg);
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
+
+
+.title h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	background: red;
+	padding: 10px;
+	font-size: 25px;
+	margin: 0 50px;
+  }
+  .title ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-right: 44px;
+  }
+  .title ul li {
+	float: right;
+	padding: 10px;
+	background: #fff;
+	margin: 5px;
+	height: 35px;
+	width: 35px;
+  }
+  .title ul li i {
+	color: red;
+  }
+  .title {
+	top: 163px;
+	position: relative;
+	left: 0;
+	display: none;
+	height: 100%;
+	width: 100%;
+	opacity: .99;
+}
+.team-member-area {
+	display: flex;
+	/* position: relative; */
+}
+.team-member-area .team1::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	content: "";
+	opacity: 0.55;
+}
+.team-member-area .team2::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	content: "";
+	opacity: 0.55;
+}
+.team-member-area .team3::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	content: "";
+	opacity: 0.55;
+}
+.team1:hover.team1::after{
+	display: none;
+}
+.team2:hover.team2::after{
+	display: none;
+}
+.team3:hover.team3::after{
+	display: none;
+}
+
+.team-member-area .team1:hover .title{
+	display: block;
+}
+.team-member-area .team2:hover .title{
+	display: block;
+}
+.team-member-area .team3:hover .title{
+	display: block;
+}
+.footer-bg {
+	background-color: #000000;
+	color: #fff;
+	padding: 80px;
+}
+.footer-bg .contact-btn {
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 35px;
+}
+@media only screen and (max-width: 991px){
+	.hero-text {
+		margin-top: 60%;
+		margin-left: 5%;
+	}
+	.header-bg {
+		height: 900px;
+		margin-top: -400px;
+	}
+		.navbar-light .navbar-toggler-icon {
+			background-color: #888;
+			border-radius: 5px;
+		}
+}
+@media only screen and (max-width: 767px){
+	.hero-text {
+		margin-top: 100%;
+		margin-left: 10%;
+		font-size: 30px;
+	}
+	.hero-text h1 {
+		color: #fff;
+		font-size: 60px;
+		line-height: 1.2;
+	}
 }
